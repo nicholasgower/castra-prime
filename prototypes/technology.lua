@@ -172,6 +172,14 @@
         {
           type = "unlock-recipe",
           recipe = "battlefield-science-pack"
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "poison-capsule-sulfur"
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "slowdown-capsule-sulfur"
         }
       },
       research_trigger =

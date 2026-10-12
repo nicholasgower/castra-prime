@@ -22,7 +22,7 @@ local combat_robot_tiers = {
 local function update_item_cache()
     has_item_cache = {}
     for _, recipe in pairs(game.forces["enemy"].recipes) do
-        if (recipe.categories and recipe.categories["recycling"]) or recipe.hidden then
+        if (recipe.categories and containsValue(recipe.categories, "recycling")) or recipe.hidden then
             goto skip_item_check
         end
 

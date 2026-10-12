@@ -241,7 +241,7 @@ data:extend({
       inventory_move_sound = item_sounds.concrete_inventory_move,
       pick_sound = item_sounds.concrete_inventory_pickup,
       drop_sound = item_sounds.concrete_inventory_move,
-      fuel_category = "castra-jammer",
+      fuel_categories = {"castra-jammer"},
       fuel_value = "1000kJ",
       stack_size = 10,
       spoil_ticks = 10 * second

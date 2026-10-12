@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.9.3
+Date: 2026-10-12
+  Bugfixes:
+    - Fix quality on Forge for new API, back to +10%
+    - Unlock sulfur capsule recipes, thanks GreenTech-Solutions
+    - Recipe category check compatibility with Coralmium Agriculture, thanks zombifier
+  Compatibility
+    - Updated to use fuel categories (modding API change)
+
+
+---------------------------------------------------------------------------------------------------
 Version: 0.9.2
 Date: 2026-09-08
   Localization:

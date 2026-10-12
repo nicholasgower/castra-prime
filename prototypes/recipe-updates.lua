@@ -26,12 +26,12 @@ function change_to_category(item)
     for _, recipe in pairs(data.raw["recipe"]) do
         if recipe.results then
             -- Ignore hidden, recycling, or explicitly opted-out recipes
-            if recipe.hidden or (recipe.categories and recipe.categories["recycling"]) or recipe.castra_prime_ignore then
+            if recipe.hidden or (recipe.categories and containsValue(recipe.categories, "recycling")) or recipe.castra_prime_ignore then
                 goto continueRecipe
             end
             for _, result in pairs(recipe.results) do
                 if result.name == item.name then
-                    if not recipe.categories or recipe.categories["crafting"] then
+                    if not recipe.categories then
                         recipe.categories = {"castra-crafting"}
                         break
                     elseif string.sub(recipe.categories[1], 1, 7) ~= "castra-" then

@@ -19,6 +19,19 @@ local combat_robot_tiers = {
     "destroyer-capsule"
 }
 
+function containsValue(array, value)
+    if not array or not value then
+        return false
+    end
+
+    for _, v in ipairs(array) do
+        if v == value then
+            return true
+        end
+    end
+    return false
+end
+
 local function update_item_cache()
     has_item_cache = {}
     for _, recipe in pairs(game.forces["enemy"].recipes) do

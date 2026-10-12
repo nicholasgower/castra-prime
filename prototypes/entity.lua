@@ -117,7 +117,7 @@ data:extend({
         corpse = "big-remnants",
         dying_explosion = "big-explosion",
         resistances = { { type = "poison", percent = 90 } },
-        effect_receiver = { base_effect = { productivity = 0.25, quality = 1 } },
+        effect_receiver = { base_effect = { productivity = 0.25, quality = 0.1 } },
         fluid_boxes = {
             {
                 production_type = "input",
